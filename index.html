@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Temp. Converter</title>
+    <link rel = "stylesheet" href="converter.css">
+    <script src="converter.js"></script>
+</head>
+
+<body>
+    <div class="name">
+        <h1><span>deJust's</span><br> Temp. Converter</h1>
+    </div>
+    <div class="switch">
+        <div id="drop">
+            <button id="convertfrom" onclick="document.getElementById('dropdown').style.display = 'block'"
+                ondblclick="document.getElementById('dropdown').style.display = 'none'"> <span>&dArr;</span> Convert
+                From <span>&dArr;</span></button><br>
+            <div class="dropdowns" id="dropdown">
+                <button id="dropdown1" onclick="onlycelcius()">Celcius (&#8451;)</button> <br>
+                <button id="dropdown2" onclick="onlyfahr()">Fahrenheit (&#8457;)</button> <br>
+                <button id="dropdown3" onclick="onlykelvin()">Kelvin (K)</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- conversion from celcius -->
+    <div class="container" id="contain">
+        <div class="display">
+            <div id="input">
+                <input type="number" name="" id="celcius" placeholder="Input value in Celcius(&#8451;) here... ">
+            </div>
+            <div class="output">
+                <p id="output">0</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="fa" onclick="far()">To Fahrenheit (&#8457;)</button>
+            <button id="kel " onclick="kelv()">To Kelvin (K)</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+  
+    <!-- conversion from Fahrenheit -->
+    <div class="container" id="contain2">
+        <div class="display">
+            <div id="input2">
+                <input type="number" name="" id="celcius2" placeholder="Input value in Fahrenheit (&#8457;) here... ">
+            </div>
+            <div class="output">
+                <p id="output2">0</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="fa2" onclick="far2()">To Celcius (&#8451;)</button>
+            <button id="kel2 " onclick="kelv2()">To Kelvin (K)</button>
+            <button id="reset2" onclick="reset2()">Reset</button>
+        </div>
+    </div>
+
+    <!-- conversion from Kelvin -->
+    <div class="container" id="contain3">
+        <div class="display">
+            <div id="input3">
+                <input type="number" name="" id="celcius3" placeholder="Input value in Kelvin(K) here...............">
+            </div>
+            <div class="output">
+                <p id="output3">0</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="fa3" onclick="far3()">To Celcius(&#8451;)</button>
+            <button id="kel3 " onclick="kelv3()">To Fahrenheit(&#8457;)</button>
+            <button id="reset3" onclick="reset3()">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>
